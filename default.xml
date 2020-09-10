@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="https://android.googlesource.com/" name="aosp"/>
+  <remote fetch="https://github.com/microsoft/" name="duo" revision="surfaceduo/10/2020.618.275"/>
+
+  <!-- build scripts -->
+  <project remote="duo" path="build" name="surface-duo-oss-kernel.build"/>
+
+  <!-- kernel source --> 
+  <project remote="duo" path="kernel/msm-4.14" name="surface-duo-oss-kernel.msm-4..14"/>
+  <project remote="duo" path="kernel/msm-4.14/techpack/audio" name="surface-duo-oss-platform.vendor.opensource.audio-kernel"/>
+  <project remote="duo" path="kernel/msm-modules/data-kernel" name="surface-duo-oss-platform.vendor.qcom-opensource.data-kernel"/>
+  <project remote="duo" path="kernel/msm-modules/wlan/qca-wifi-host-cmn" name="surface-duo-oss-platform.vendor.qcom-opensource.wlan.qca-wifi-host-cmn"/>
+  <project remote="duo" path="kernel/msm-modules/wlan/qcacld-3.0" name="surface-duo-oss-platform.vendor.qcom-opensource.wlan.qcacld-3..0"/>
+  <project remote="duo" path="kernel/msm-modules/wlan/fw-api" name="surface-duo-oss-platform.vendor.qcom-opensource.wlan.fw-api"/>
+
+  <!-- tools from AOSP servers -->
+  <project remote="aosp" path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" revision="pie-release" clone-depth="1"/>
+  <project remote="aosp" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" revision="pie-release" clone-depth="1"/>
+  <project remote="aosp" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" revision="639243dd5cb2c5ea1313f033c75c8c533813a484" clone-depth="1"/>
+  <project remote="aosp" path="prebuilts-master/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" revision="4b1f275e6b3826c86f791ae8c4d5ec3563c2fc11" clone-depth="1"/>
+  <project remote="aosp" path="prebuilts-master/misc" name="platform/prebuilts/misc" revision="pie-release" clone-depth="1"/>
+
+  <!-- Qualcomm SD LLVM compiler must be downloaded from https://developer.qualcomm.com/software/snapdragon-llvm-compiler-android/tools (8.0.6) -->
+  <!-- <project remote="" path="proprietary/llvm-arm-toolchain-ship" name="sm8150.proprietary.llvm-arm-toolchain-ship" clone-depth="1"/> -->
+</manifest>
