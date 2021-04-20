@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote fetch="https://android.googlesource.com/" name="aosp"/>
-  <remote fetch="https://github.com/microsoft/" name="duo" revision="surfaceduo/10/2021.314.93"/>
+  <remote fetch="https://github.com/microsoft/" name="duo" revision="surfaceduo/10/2021.314.91"/>
 
   <!-- build scripts -->
   <project remote="duo" path="build" name="surface-duo-oss-kernel.build"/>
