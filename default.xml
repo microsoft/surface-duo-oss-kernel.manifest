@@ -11,7 +11,7 @@
   <project remote="duo" name="surface-duo-oss-kernel.msm-4..14" path="kernel/msm-4.14" />
   <project remote="duo" name="surface-duo-oss-platform.vendor.opensource.audio-kernel" path="vendor/qcom/opensource/audio-kernel" />
   <project remote="duo" name="surface-duo-oss-platform.vendor.qcom-opensource.data-kernel" path="vendor/qcom/opensource/data-kernel" />
-  <project remote="duo" name="surface-duo-oss-platform.vendor.qcom-opensource.wlan.qca-wifi-ho" path="vendor/qcom/opensource/wlan/qca-wifi-host-cmn" />
+  <project remote="duo" name="surface-duo-oss-platform.vendor.qcom-opensource.wlan.qca-wifi-host-cmn" path="vendor/qcom/opensource/wlan/qca-wifi-host-cmn" />
   <project remote="duo" name="surface-duo-oss-platform.vendor.qcom-opensource.wlan.qcacld-3..0" path="vendor/qcom/opensource/wlan/qcacld-3.0" />
   <project remote="duo" name="surface-duo-oss-platform.vendor.qcom-opensource.wlan.fw-api" path="vendor/qcom/opensource/wlan/fw-api" />
 
