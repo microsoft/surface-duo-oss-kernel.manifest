@@ -2,7 +2,7 @@
 <manifest>
   <remote fetch="https://android.googlesource.com/" name="aosp" />
   <remote fetch="https://source.codeaurora.org/quic/la/" name="caf" />
-  <remote fetch="https://github.com/microsoft/" name="duo2" revision="surfaceduo2/11/2022.517.98" />
+  <remote fetch="https://github.com/microsoft/" name="duo2" revision="surfaceduo2/11/2022.519.47" />
 
   <!-- build scripts -->
   <project remote="duo2" name="surface-duo-oss-kernel.build" path="device/qcom/kernelscripts" />
