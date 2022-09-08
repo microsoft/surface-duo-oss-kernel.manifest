@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="https://android.googlesource.com/" name="aosp" />
+  <remote fetch="https://source.codeaurora.org/quic/la/" name="caf" />
+  <remote fetch="https://github.com/microsoft/" name="duo2" revision="surfaceduo2/11/2022.521.8" />
+
+  <!-- build scripts -->
+  <project remote="duo2" name="surface-duo-oss-kernel.build" path="device/qcom/kernelscripts" />
+  <project remote="duo2" name="surface-duo-oss-device.build" path="device_build" />
+
+  <!-- kernel source -->
+  <project remote="duo2" name="surface-duo-oss-kernel.msm-5..4" path="kernel/msm-5.4" />
+  <project remote="duo2" name="surface-duo-oss-kernel.tests" path="kernel/tests" />
+  <project remote="duo2" name="surface-duo-oss-platform.vendor.opensource.audio-kernel" path="kernel/msm-5.4/techpack/audio" />
+  <project remote="duo2" name="surface-duo-oss-platform.vendor.opensource.camera-kernel" path="kernel/msm-5.4/techpack/camera" />
+  <project remote="duo2" name="surface-duo-oss-platform.vendor.opensource.dataipa" path="kernel/msm-5.4/techpack/dataipa" />
+  <project remote="duo2" name="surface-duo-oss-platform.vendor.opensource.display-drivers" path="kernel/msm-5.4/techpack/display" />
+  <project remote="duo2" name="surface-duo-oss-platform.vendor.opensource.video-driver" path="kernel/msm-5.4/techpack/video" />
+  <project remote="duo2" name="surface-duo-oss-sm8350.11.devicetree" path="vendor/qcom/proprietary/devicetree" />
+  <project remote="duo2" name="surface-duo-oss-sm8350.11.display-devicetree" path="vendor/qcom/proprietary/display-devicetree" />
+  <project remote="duo2" name="surface-duo-oss-sm8350.11.camera-devicetree" path="vendor/qcom/proprietary/camera-devicetree" />
+
+  <!-- tools from AOSP service-->
+  <project remote="caf" name="kernel/configs" path="kernel/configs" revision="c2e37eacdd3cb10def7e69356ab103c24c66865d" />
+  <project remote="aosp" name="platform/prebuilts/clang/host/linux-x86" path="prebuilts/clang/host/linux-x86" revision="master-kernel-build-2021" clone-depth="1" />
+  <project remote="caf" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" revision="e96fdcafcd060f51c408b966f3c39bea07e69fba" clone-depth="1" />
+  <project remote="caf" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" revision="26e93f6af47f7bd3a9beb5c102a5f45e19bfa38a" clone-depth="1" />
+  <project remote="caf" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" revision="ed4dd4061ea14ec822ec5acc4ead64891c255882" clone-depth="1" />
+  <project remote="caf" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" revision="e763c254003f138107cffefde180bb661a3470bf" clone-depth="1" />
+  <project remote="caf" name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" revision="e384bbf3fdb8d26f0400a54909f7a01bab638d17" clone-depth="1" />
+  <project remote="caf" name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" revision="b50888f6d587e5ac28c0ec674ec5a144e386b1d5" clone-depth="1" />
+  <project remote="caf" name="platform/prebuilts/build-tools" path="prebuilts/build-tools" revision="54243b799992d4c5bcb908353cd257df9c9bd119" clone-depth="1" />
+</manifest>
